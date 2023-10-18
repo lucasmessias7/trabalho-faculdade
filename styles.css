@@ -1,0 +1,120 @@
+.intro-content {
+    position: relative;   
+    /*top: -8rem;*/ 
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+}
+
+.intro-text-content, .intro-img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+
+.intro-img img,
+.intro-img svg {
+    max-width: 50rem;
+    height: 50rem;
+}
+
+.intro-img {
+    padding-left: 15rem;
+}
+
+
+.introduction-content {
+    max-width: 64rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;   
+}
+
+
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+}
+
+.close-menu {
+    display: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: white;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: black;
+  transform: rotate(-90deg);
+  border: 0.1rem solid black;
+}
+
+
+
+@media (max-width: 800px) {
+    h2 {
+        width: 100%;
+    }
+    .intro-content{
+        grid-template-columns: 1fr;
+    }
+
+    .menu {
+        bottom: 0;
+        text-align: center;
+      }
+    
+      .menu-content, .menu-content ul {
+        flex-direction: column;
+        justify-content: center;
+      }
+    
+      .menu-content {
+        height: 100vh;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .close-menu-label::after {
+        content: '☰';
+        position: fixed;
+        z-index: 2;
+        top: 2rem;
+        right: 2rem;
+        background: white;
+        color: black;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+      }
+    
+      .close-menu:checked~.menu {
+        display: block;
+      }
+    
+      .close-menu:checked~.close-menu-label::after {
+        content: '×';
+      }
+    
+      .menu-spacing {
+        display: none;
+      }
+}
