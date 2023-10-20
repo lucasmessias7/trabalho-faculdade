@@ -149,7 +149,7 @@
           left: 25%;
       }
       .main-bg {
-        background-image: url('/HTML/endless-constellation\(3\).svg');
+        background-image: url('./endless-constellation(3).svg');
         background-size: cover;
         background-position: center center;
         color: var(--primary);
@@ -204,7 +204,7 @@
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     .main-bg {
-        background-image: url('/HTML/endless-constellation\(3\).svg');
+        background-image: url('./endless-constellation(3).svg');
         background-size: cover;
         background-position: center center;
         color: var(--primary);
